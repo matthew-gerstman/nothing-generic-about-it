@@ -1,0 +1,98 @@
+import {AppearList} from './src/appear-list';
+import AboutMe from './src/about-me';
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer";
+
+import duskOwl from './src/dusk-owl';
+
+import {nightOwl, github, vsDark, dracula, duotoneDark, duotoneLight, oceanicNext, shadesOfPurple, ultramin } from "@code-surfer/themes";
+export const theme = nightOwl;
+
+# Nothing Generic About It
+
+---
+
+<AboutMe/>
+
+---
+
+# TypeScript: Seeing Past The Hype
+
+link here
+
+---
+
+# What is a type?
+
+---
+
+# A type is an attribute of data that tells the computer how the programmer intends to use it.
+
+---
+
+# Basic Types
+
+<AppearList>
+  <li>
+    <Emoji name="typescript.jpg" /> boolean
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" /> number
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" /> string
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" /> array
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" /> object
+  </li>
+</AppearList>
+
+---
+<CodeSurfer>
+
+```ts file=./snippets/what-is.ts
+```
+</CodeSurfer>
+
+---
+
+# Falsy Types
+
+<AppearList>
+  <li>
+    <EmojiWrapper>❌</EmojiWrapper> null
+  </li>
+  <li>
+    <EmojiWrapper>❌</EmojiWrapper> undefined
+  </li>
+  <li>
+    <EmojiWrapper>❌</EmojiWrapper> never
+  </li>
+  <li>
+    <EmojiWrapper>❌</EmojiWrapper> void
+  </li>
+</AppearList>
+
+---
+
+# Any
+
+---
+
+# Types can also be derived from other types
+
+---
+
+# Intersection Types
+
+<CodeSurfer>
+
+```ts file=./snippets/intersection.ts
+```
+</CodeSurfer>

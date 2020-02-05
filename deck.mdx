@@ -33,54 +33,6 @@ link here
 
 ---
 
-# Basic Types
-
-<AppearList>
-  <li>
-    <Emoji name="typescript.jpg" /> boolean
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" /> number
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" /> string
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" /> array
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" /> object
-  </li>
-</AppearList>
-
----
-
-# Falsy Types
-
-<AppearList>
-  <li>
-    <EmojiWrapper>❌</EmojiWrapper> null
-  </li>
-  <li>
-    <EmojiWrapper>❌</EmojiWrapper> undefined
-  </li>
-  <li>
-    <EmojiWrapper>❌</EmojiWrapper> never
-  </li>
-  <li>
-    <EmojiWrapper>❌</EmojiWrapper> void
-  </li>
-</AppearList>
-
----
-
-# Any
-
----
-
-# Types can also be derived from other types
-
----
 <CodeSurfer>
 
 ```ts file=./snippets/what-is.ts
@@ -101,6 +53,114 @@ link here
 ```ts 2,9 file=./snippets/what-is.ts
 ```
 </CodeSurfer>
+
+---
+
+# Basic Types
+
+<AppearList>
+  <li>
+    <Emoji name="typescript.jpg" /> boolean
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" /> number
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" /> string
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" /> array
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" /> object
+  </li>
+</AppearList>
+
+
+---
+
+# Falsy Types
+
+<AppearList>
+  <li>
+    <EmojiWrapper>❌</EmojiWrapper> null
+  </li>
+  <li>
+    <EmojiWrapper>❌</EmojiWrapper> undefined
+  </li>
+  <li>
+    <EmojiWrapper>❌</EmojiWrapper> void
+  </li>  
+</AppearList>
+
+---
+
+# Any
+
+---
+
+# Joke
+
+---
+
+# Never
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/never.ts
+```
+
+```ts file=./snippets/never-with-error.ts
+```
+
+</CodeSurfer>
+
+---
+
+# Unknown
+
+<AppearList>
+  <li>unknown has a value</li>
+  <li>any value can be assigned to unknown</li>
+  <li>unknown cannot be assigned to anything until we figure out the type at runtime</li>
+</AppearList>
+
+<Notes>
+Honest any
+
+</Notes>
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/unknown.ts
+```
+
+</CodeSurfer>
+
+---
+
+Structural Typing
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/structural-types.ts
+```
+
+```ts file=./snippets/structural-type-error.ts
+```
+
+</CodeSurfer>
+
+---
+
+# Types can also be derived from other types
+
 
 ---
 
@@ -165,6 +225,26 @@ link here
 ```
 
 ```ts file=./snippets/union.ts
+```
+
+</CodeSurfer>
+
+
+---
+
+# Transitive Properties
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/properties-never.ts
+```
+
+```ts file=./snippets/properties-unknown.ts
+```
+
+```ts file=./snippets/properties-any.ts
 ```
 
 </CodeSurfer>
@@ -311,3 +391,24 @@ link here
 ```
 
 </CodeSurfer>
+
+---
+
+# Mapped Types
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/mapped.ts
+```
+</CodeSurfer>
+
+
+---
+
+# Conditional Types
+
+
+
+https://blog.logrocket.com/when-to-use-never-and-unknown-in-typescript-5e4d6c5799ad/

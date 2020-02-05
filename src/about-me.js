@@ -16,7 +16,7 @@ export default function AboutMe() {
       <ul style={{margin: 0}}>
         <CenteredLi>
           <Emoji size="40px" marginRight="30px" name="dropbox.svg" />
-          Engineer on Family
+          Engineer at Dropbox
         </CenteredLi>
         <CenteredLi>
           <EmojiWrapper size="40px" marginRight="30px">

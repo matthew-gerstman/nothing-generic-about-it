@@ -16,7 +16,7 @@ export default function AboutMe() {
       <ul style={{margin: 0}}>
         <CenteredLi>
           <Emoji size="40px" marginRight="30px" name="dropbox.svg" />
-          Senior Software Engineer at Dropbox
+          Engineer on Family
         </CenteredLi>
         <CenteredLi>
           <EmojiWrapper size="40px" marginRight="30px">
@@ -32,7 +32,9 @@ export default function AboutMe() {
           <EmojiWrapper size="40px" marginRight="30px">
             📺
           </EmojiWrapper>
-          <a href="https://slides.slytherin.dev">slides.slytherin.dev</a>
+          <a href="https://generics.matthewgerstman.com">
+            generics.matthewgerstman.com
+          </a>
         </CenteredLi>
       </ul>
     </React.Fragment>

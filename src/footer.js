@@ -9,13 +9,14 @@ const Footer = styled.footer`
   color: white;
   padding: 30px 100px;
   text-align: right;
-  width: 100vw;
+  width: 100%;
   height: ${({height}) => height};
   background: ${darkGreen};
   display: flex;
   justify-content: space-between;
   position: absolute;
   bottom: 0;
+  box-sizing: border-box;
 `;
 
 const AlignedDiv = styled.div`

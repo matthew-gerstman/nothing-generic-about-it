@@ -59,7 +59,7 @@ export default function MatthewProvider({children}) {
     <Fragment>
       <GlobalStyle />
       <Wrapper>{children}</Wrapper>
-      <Bar size={(index + 1) / length} />
+      {/* <Bar size={(index + 1) / length} /> */}
       <Footer height={footerHeight} />
     </Fragment>
   );

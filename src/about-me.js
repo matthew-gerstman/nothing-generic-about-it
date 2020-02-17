@@ -5,7 +5,7 @@ import {darkGreen} from './colors';
 
 const CenteredLi = styled.li`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 `;
 
 export default function AboutMe() {
@@ -15,22 +15,22 @@ export default function AboutMe() {
       <hr style={{borderColor: darkGreen}} />
       <ul style={{margin: 0}}>
         <CenteredLi>
-          <Emoji size="40px" marginRight="30px" name="dropbox.svg" />
+          <Emoji size="50px" marginRight="30px" name="dropbox.svg" />
           Engineer at Dropbox
         </CenteredLi>
         <CenteredLi>
-          <EmojiWrapper size="40px" marginRight="30px">
+          <EmojiWrapper fontSize="0.75em" size="50px" marginRight="30px">
             🗽
           </EmojiWrapper>{' '}
           NYC
         </CenteredLi>
         <CenteredLi>
-          <Emoji size="40px" marginRight="30px" name="twitter.png" />
+          <Emoji size="50px" marginRight="30px" name="twitter.png" />
           <a href="https://twitter.com/MatthewGerstman">@MatthewGerstman</a>
         </CenteredLi>
         <CenteredLi>
-          <EmojiWrapper size="40px" marginRight="30px">
-            📺
+          <EmojiWrapper fontSize="0.75em" size="50px" marginRight="30px">
+            📒
           </EmojiWrapper>
           <a href="https://generics.matthewgerstman.com">
             generics.matthewgerstman.com

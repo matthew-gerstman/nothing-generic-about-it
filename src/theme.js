@@ -13,6 +13,9 @@ export default {
     text: 'white',
     background: '#0a0b0f',
     link: 'white',
+    primary: '#ffafa2',
+    secondary: '#0d2481',
+
   },
   a: {color: 'white', textDecoration: 'none'},
   h1: {

@@ -24,27 +24,21 @@ const AlignedDiv = styled.div`
   align-items: center;
 `;
 
+const SlideEmojiWrapper = styled.div`
+  margin-right: 10px;
+`
+
 export default ({children, height}) => (
   <Footer height={height}>
     <AlignedDiv>
-      {children}
-      <span>
-        <EmojiWrapper size="1.5em" marginRight="10px">
-          🎧
-        </EmojiWrapper>
-        <a href="https://theconsolelog.com">The Console Log</a>
-      </span>
-    </AlignedDiv>
-
-    <AlignedDiv>
-      <EmojiWrapper size="1.5em" marginRight="10px">
+      <SlideEmojiWrapper>
         📒
-      </EmojiWrapper>
-      <a href="https://slides.slyterin.dev">typescript.matthewgerstman.com</a>
+      </SlideEmojiWrapper>
+      <a href="https://generics.matthewgerstman.com">generics.matthewgerstman.com</a>
     </AlignedDiv>
 
     <AlignedDiv>
-      <Emoji name="twitter.png" size="1.5em" marginRight="10px" />
+      <Emoji name="twitter.png" size="30px" marginRight="10px" />
       <a href="https://twitter.com/matthewgerstman">@MatthewGerstman</a>
     </AlignedDiv>
   </Footer>

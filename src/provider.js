@@ -2,12 +2,28 @@ import React, {Fragment} from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 import {useDeck} from 'gatsby-theme-mdx-deck';
 import Footer from './footer';
+const AtlasGrotesk = require('../assets/fonts/AtlasGrotesk-Black-Web.ttf')
+const SharpGrotesk = require('../assets/fonts/SharpGroteskDBBook20.ttf')
+console.log({SharpGrotesk})
 
 const footerHeight = '80px';
 
-const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
-	a {
+const GlobalStyle = createGlobalStyle`  
+  @font-face {
+    font-family: "AtlasGrotesk";
+    src: url('${AtlasGrotesk}') format("truetype");
+  }
+
+  @font-face {
+    font-family: "SharpGrotesk";
+    src: url('${SharpGrotesk}') format("truetype");
+  }
+
+  body {
+    font-family: "SharpGrotesk";
+  }
+
+  a {
 		color: white;
 		text-decoration: none;
 	}
@@ -22,11 +38,15 @@ const GlobalStyle = createGlobalStyle`
 		padding-top: 10px;
 	}
 	h1 {
-		text-transform: uppercase;
-		font-size: 3em;
+    font-family: SharpGrotesk!important;
+    text-transform: uppercase;		    
+    text-align: center; 
   }
-	h2 {
-		text-transform: uppercase;
+  
+  h2 {    
+    font-family: SharpGrotesk!important;
+    text-transform: uppercase;
+    text-align: center;        
   }
 `;
 
@@ -49,8 +69,7 @@ const Bar = styled.div`
 `;
 
 export default function MatthewProvider({children}) {
-  const {mode, length, index} = useDeck();
-  console.log({deck: useDeck()});
+  const {mode, length, index} = useDeck(); 
   if (mode.toLowerCase() !== 'normal') {
     return children;
   }

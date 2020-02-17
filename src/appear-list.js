@@ -1,10 +1,10 @@
 import {Appear, Notes} from 'mdx-deck';
 import React from 'react';
 
-export function AppearList({children}) {
+export function AppearList({children, marginTop}) {
   return (
     <>
-      <ul>
+      <ul style={{marginTop}}>
         <Appear>{children}</Appear>
       </ul>
       <Notes>

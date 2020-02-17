@@ -12,6 +12,7 @@ const dobby: Elf = {name: 'Dobby'};
 function getPersonName(person: Person) {
   return person.name;
 }
+
 // No Errors
 getPersonName(harry);
 getPersonName(dobby);

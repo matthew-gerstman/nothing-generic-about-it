@@ -8,7 +8,19 @@ import {
 
 import duskOwl from './src/dusk-owl';
 
-import hype from "./assets/images/hype.png"
+import hype from "./assets/images/hype.png";
+import allCaps from './assets/images/all-caps.png';
+import cssIsAwesome from './assets/images/css-is-awesome.png';
+import jsGuild from './assets/images/js-guild.png';
+import brendanYoung from './assets/images/brendan.jpg';
+import brendanSuit from './assets/images/brendan-suit.jpg';
+
+import trustFall from './assets/images/trust-fall.gif';
+import benderFlexo from './assets/images/bender-flexo.gif';
+import sayMyNameBeyonce from './assets/images/say-my-name-beyonce.gif';
+import sayMyNameVoldemort from './assets/images/say-my-name-voldemort.gif';
+import taylorExcited from './assets/images/taylor-excited.gif';
+
 import Emoji, {EmojiWrapper} from './src/emoji';
 
 import {nightOwl, github, vsDark, dracula, duotoneDark, duotoneLight, oceanicNext, shadesOfPurple, ultramin } from "@code-surfer/themes";
@@ -20,6 +32,10 @@ export const theme = customTheme;
 ---
 
 <AboutMe/>
+
+---
+
+# Nothing Generic About It
 
 ---
 
@@ -102,7 +118,51 @@ export const theme = customTheme;
 
 ---
 
-# Joke
+<img src={trustFall} style={{height:"90%"}} />
+
+---
+
+# Unknown
+
+<AppearList>
+  <li><Emoji name="typescript.jpg" size="40px" /> unknown still has a value</li>
+  <li><Emoji name="typescript.jpg" size="40px" /> any value can be assigned to unknown</li>
+  <li><Emoji name="typescript.jpg" size="40px" /> requires we determine the type at runtime</li>
+</AppearList>
+
+<Notes>
+Honest any
+
+</Notes>
+
+---
+
+<img src={benderFlexo} style={{height: "90%"}} />
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/unknown.ts
+```
+
+```ts 1[11:20] file=./snippets/unknown.ts
+```
+
+```ts 2,3 file=./snippets/unknown.ts
+```
+
+```ts 5,6 file=./snippets/unknown.ts
+```
+
+```ts 8,9 file=./snippets/unknown.ts
+```
+
+```ts 11:15 file=./snippets/unknown.ts
+```
+
+
+</CodeSurfer>
 
 ---
 
@@ -115,6 +175,25 @@ export const theme = customTheme;
 ```ts file=./snippets/never.ts
 ```
 
+```ts 1:3 file=./snippets/never.ts
+```
+
+```ts 1[31:36] file=./snippets/never.ts
+```
+
+```ts 1[39:45] file=./snippets/never.ts
+```
+
+```ts 5:8 file=./snippets/never.ts
+```
+
+```ts 10:19 file=./snippets/never.ts
+```
+
+```ts 17 file=./snippets/never.ts
+```
+
+
 ```ts file=./snippets/never-with-error.ts
 ```
 
@@ -122,37 +201,25 @@ export const theme = customTheme;
 
 ---
 
-# Unknown
-
-<AppearList>
-  <li>unknown has a value</li>
-  <li>any value can be assigned to unknown</li>
-  <li>unknown cannot be assigned to anything until we figure out the type at runtime</li>
-</AppearList>
-
-<Notes>
-Honest any
-
-</Notes>
-
----
-
-<CodeSurfer>
-
-```ts file=./snippets/unknown.ts
-```
-
-</CodeSurfer>
-
----
-
-Structural Typing
+# Structurally Typed
 
 ---
 
 <CodeSurfer>
 
 ```ts file=./snippets/structural-types.ts
+```
+
+```ts 1:7 file=./snippets/structural-types.ts
+```
+
+```ts 9:10 file=./snippets/structural-types.ts
+```
+
+```ts 12:14 file=./snippets/structural-types.ts
+```
+
+```ts 16:19 file=./snippets/structural-types.ts
 ```
 
 ```ts file=./snippets/structural-type-error.ts
@@ -172,6 +239,9 @@ Structural Typing
 ---
 
 <CodeSurfer>
+
+```ts file=./snippets/intersection.ts
+```
 
 ```ts 1:2 file=./snippets/intersection.ts
 ```
@@ -202,9 +272,12 @@ Structural Typing
 
 <CodeSurfer>
 
-```ts 1,2 file=./snippets/union.ts
+
+```ts file=./snippets/union.ts
 ```
 
+```ts 1,2 file=./snippets/union.ts
+```
 
 ```ts 3 file=./snippets/union.ts
 ```
@@ -232,6 +305,13 @@ Structural Typing
 
 </CodeSurfer>
 
+---
+
+<img src={sayMyNameBeyonce} style={{height: "90%"}} />
+
+---
+
+<img src={sayMyNameVoldemort} style={{height: "90%"}} />
 
 ---
 
@@ -244,8 +324,44 @@ Structural Typing
 ```ts file=./snippets/properties-never.ts
 ```
 
+```ts 1[10:25],2[10:25],3[10:23] file=./snippets/properties-never.ts
+```
+
+```ts 1[29:40],2[29:40],3[27:40] file=./snippets/properties-never.ts
+```
+
+```ts 5[10:25],6[10:25],7[10:23]  file=./snippets/properties-never.ts
+```
+
+```ts 5[29:40],6[29:40],7[27:40] file=./snippets/properties-never.ts
+```
+
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
 ```ts file=./snippets/properties-unknown.ts
 ```
+
+```ts 1[10:26],2[10:26],3[10:24] file=./snippets/properties-unknown.ts
+```
+
+```ts 1[30:40],2[30:40],3[28:40] file=./snippets/properties-unknown.ts
+```
+
+```ts 5[10:26],6[10:26],7[10:24]  file=./snippets/properties-unknown.ts
+```
+
+```ts 5[30:40],6[30:40],7[28:40] file=./snippets/properties-unknown.ts
+```
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
 
 ```ts file=./snippets/properties-any.ts
 ```
@@ -255,6 +371,10 @@ Structural Typing
 ---
 
 # Generics
+
+---
+
+<img src={taylorExcited} style={{height: "90%"}} />
 
 ---
 
@@ -405,8 +525,103 @@ Structural Typing
 
 ```ts file=./snippets/mapped.ts
 ```
+
+```ts 1[20:33],4[1:10] file=./snippets/mapped.ts
+```
+
+```ts 1 file=./snippets/mapped.ts
+```
+
 </CodeSurfer>
 
+---
+
+<CodeSurfer>
+
+```ts 1:8 file=./snippets/mapped-partial-tay.ts
+```
+
+
+```ts 9 file=./snippets/mapped-partial-tay.ts
+```
+
+```ts 10:18 file=./snippets/mapped-partial-tay.ts
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+
+```ts 1:3 file=./snippets/mapped-partial.ts
+```
+
+```ts 1[13:15] file=./snippets/mapped-partial.ts
+```
+
+```ts 2[3:16] file=./snippets/mapped-partial.ts
+```
+
+```ts 2[4] file=./snippets/mapped-partial.ts
+```
+
+```ts 2[9:15] file=./snippets/mapped-partial.ts
+```
+
+```ts 2[17] file=./snippets/mapped-partial.ts
+```
+
+```ts 2[20:23] file=./snippets/mapped-partial.ts
+```
+
+```ts file=./snippets/mapped-partial.ts
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/mapped-pick.ts
+```
+
+
+```ts 5 file=./snippets/mapped-pick.ts
+```
+
+```ts 6:10 file=./snippets/mapped-pick.ts
+```
+
+```ts file=./snippets/mapped-pick.ts
+```
+
+```ts 1[11] file=./snippets/mapped-pick.ts
+```
+
+```ts 1[14:30] file=./snippets/mapped-pick.ts
+```
+
+```ts 2[9:15] file=./snippets/mapped-partial.ts
+```
+
+```ts 1[14:30] file=./snippets/mapped-pick.ts
+```
+
+```ts 2[3:10] file=./snippets/mapped-pick.ts
+```
+
+```ts 2[13:16] file=./snippets/mapped-pick.ts
+```
+
+```ts file=./snippets/mapped-pick.ts
+```
+
+</CodeSurfer>
+
+---
 
 ---
 

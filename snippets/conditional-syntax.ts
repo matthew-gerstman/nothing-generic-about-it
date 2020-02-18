@@ -1,4 +1,4 @@
-type Foo<T> = T extends number ? number : null;
+type NumberOrNull<T> = T extends number ? number : null;
 
-type x = Foo<number>; // number
-type y = Foo<string>; // null
+type x = NumberOrNull<number>; // number
+type y = NumberOrNull<string>; // null

@@ -16,5 +16,10 @@ type PageData = {
 };
 
 type TranslatedPageData = TranslateObject<PageData>;
-
-function i18nifyPage(page: PageData): TranslatedPageData;
+type TranslatedPageData = {
+  title: TranslatedString;
+  body: TranslatedString;
+  footer: TranslatedString;
+  numUsers: number;
+  userData: Object;
+};

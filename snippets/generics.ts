@@ -2,6 +2,6 @@ function identity<T>(foo: T): T {
   return foo;
 }
 
-const muggle: string = identity('Vernon Dursley');
-const muggles: string[] = identity(['Vernon Dursely', 'Petunia Dursley']);
-const number: number = identity(42);
+const album: string = identity('Red');
+const albums: string[] = identity(['1989', 'Lover']);
+const number: number = identity(13);

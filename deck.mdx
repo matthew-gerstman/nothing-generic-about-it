@@ -6,6 +6,7 @@ import {
   Step,
 } from "code-surfer";
 
+import CoveredTopics from './src/covered';
 import duskOwl from './src/dusk-owl';
 
 import hype from "./assets/images/hype.png";
@@ -41,11 +42,9 @@ export const theme = customTheme;
 
 <AboutMe/>
 
-
 ---
 
 # JS Guild Slides
-
 ---
 
 # Nothing Generic About It
@@ -166,6 +165,10 @@ Honest any
 ---
 
 <img src={sonicScrewdriver} style={{height: "90%"}} />
+
+---
+
+<CoveredTopics />
 
 ---
 
@@ -376,6 +379,10 @@ Honest any
 
 ---
 
+Gif about any clobbering/bulldozing types
+
+---
+
 # Generics
 
 ---
@@ -510,6 +517,13 @@ Honest any
 ```ts 1:4,10 file=./snippets/indexing.ts
 ```
 
+```ts 9[31:56],11 file=./snippets/indexing.ts
+```
+```ts 9[41:56] file=./snippets/indexing.ts
+```
+```ts file=./snippets/keyof-index.ts
+```
+
 ```ts 2[3:8],3[3:7],9[31:56],11 file=./snippets/indexing.ts
 ```
 
@@ -576,20 +590,40 @@ Honest any
 
 <CodeSurfer>
 
-
 ```ts 1:3 file=./snippets/mapped-partial.ts
 ```
 
+
 ```ts 1[13:15] file=./snippets/mapped-partial.ts
 ```
+
+```ts 2[9:15] file=./snippets/mapped-partial.ts
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```ts 7,8 file=./snippets/keyof-example.ts
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+
+```ts 2[9:15] file=./snippets/mapped-partial.ts
+```
+
 
 ```ts 2[3:16] file=./snippets/mapped-partial.ts
 ```
 
 ```ts 2[4] file=./snippets/mapped-partial.ts
-```
-
-```ts 2[9:15] file=./snippets/mapped-partial.ts
 ```
 
 ```ts 2[17] file=./snippets/mapped-partial.ts
@@ -644,6 +678,10 @@ Honest any
 
 ---
 
+You need to calm down gif
+
+---
+
 # Conditional Types
 
 ---
@@ -673,7 +711,6 @@ Honest any
 
 ```ts file=./snippets/conditional-syntax.ts
 ```
-
 
 </CodeSurfer>
 
@@ -710,29 +747,29 @@ type EventualType<T> = T extends Promise<unknown> ?
 
 ```ts file=./snippets/infer-syntax.ts
 ```
-```ts 1 file=./snippets/infer-syntax.ts
+```ts 1,2 file=./snippets/infer-syntax.ts
 ```
 
-```ts 1[29:55] file=./snippets/infer-syntax.ts
+```ts 1[24:49] file=./snippets/infer-syntax.ts
 ```
 
-```ts 1[47:53] file=./snippets/infer-syntax.ts
+```ts 1[42:48] file=./snippets/infer-syntax.ts
 ```
 
 ```ts 2[5] file=./snippets/infer-syntax.ts
 ```
 
-```ts 2[5:13] file=./snippets/infer-syntax.ts
+```ts 2[8:13] file=./snippets/infer-syntax.ts
 ```
 
 
-```ts 3,4 file=./snippets/infer-syntax.ts
-```
-```ts 1,2,3,6 file=./snippets/infer-syntax.ts
+```ts 4,5 file=./snippets/infer-syntax.ts
 ```
 ```ts 1,2,4,7 file=./snippets/infer-syntax.ts
 ```
-```ts 1,2,8 file=./snippets/infer-syntax.ts
+```ts 1,2,5,8 file=./snippets/infer-syntax.ts
+```
+```ts 1,2,9 file=./snippets/infer-syntax.ts
 ```
 
 ```ts file=./snippets/infer-syntax.ts
@@ -746,7 +783,7 @@ type EventualType<T> = T extends Promise<unknown> ?
 
 ```ts file=./snippets/infer-function.ts
 ```
-```ts 1 file=./snippets/infer-function.ts
+```ts 1,2 file=./snippets/infer-function.ts
 ```
 ```ts 1[19:58] file=./snippets/infer-function.ts
 ```
@@ -775,7 +812,7 @@ type EventualType<T> = T extends Promise<unknown> ?
 ```ts file=./snippets/infer-props.ts
 ```
 
-```ts 1 file=./snippets/infer-props.ts
+```ts 1,2 file=./snippets/infer-props.ts
 ```
 
 ```ts 1[28:66] file=./snippets/infer-props.ts
@@ -812,31 +849,6 @@ type EventualType<T> = T extends Promise<unknown> ?
 ---
 
 # Review
-
-<ul style={{fontSize: '1em', marginTop: "-40px"}}>
-  <li>
-    <Emoji name="typescript.jpg" size="40px" /> Structural Typing
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" size="40px" /> Never & Unknown
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" size="40px" /> Unions & Intersections
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" size="40px" /> Generics
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" size="40px" /> Type Indexing
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" size="40px" /> Mapped Types
-  </li>
-  <li>
-    <Emoji name="typescript.jpg" size="40px" /> Conditional Types & Infer
-  </li>
-
-</ul>
 
 ---
 
@@ -983,6 +995,10 @@ type WhatDidYouPromise<T> = T extends Promise<infer A>
 ```
 
 </CodeSurfer>
+
+---
+
+<CoveredTopics />
 
 ---
 

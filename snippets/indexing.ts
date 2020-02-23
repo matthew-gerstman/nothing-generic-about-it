@@ -7,7 +7,7 @@ type People = ReduxState['people'];
 type People = Person[];
 
 function getKeyFromReduxStore<T extends keyof ReduxState>(
-  world: ReduxState,
+  state: ReduxState,
   key: T,
 ): ReduxState[T] {
   return world[key];

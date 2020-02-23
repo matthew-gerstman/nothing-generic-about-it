@@ -1,5 +1,5 @@
 type Person = {name: string; wand: string};
-type Elf = {name: string; master: Person};
+type Elf = {name: string;};
 
 type SpellCaster<T extends Person> = T & {spells: Function[]};
 type Wizard = SpellCaster<Person>;

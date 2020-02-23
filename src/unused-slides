@@ -1,0 +1,191 @@
+## What is a type?
+
+---
+
+## A type is an attribute of data that tells the computer how the programmer intends to use it.
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/what-is.ts
+```
+
+```ts 1[16:23],2[17:25],4[25:32] file=./snippets/what-is.ts
+```
+
+```ts 4:6 file=./snippets/what-is.ts
+```
+
+```ts 4[25:32] file=./snippets/what-is.ts
+```
+
+```ts 1,8 file=./snippets/what-is.ts
+```
+
+```ts 2,9 file=./snippets/what-is.ts
+```
+</CodeSurfer>
+
+---
+
+# Basic Types
+<AppearList marginTop="-40px">
+  <li>
+    <Emoji name="typescript.jpg" size="40px" /> boolean
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" size="40px" /> number
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" size="40px" /> string
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" size="40px" /> array
+  </li>
+  <li>
+    <Emoji name="typescript.jpg" size="40px" /> object
+  </li>
+</AppearList>
+
+
+---
+
+# Falsy Types
+
+<AppearList marginTop="-10px">
+  <li>
+    <EmojiWrapper fontSize="0.6em">❌</EmojiWrapper> null
+  </li>
+  <li>
+    <EmojiWrapper fontSize="0.6em">❌</EmojiWrapper> undefined
+  </li>
+  <li>
+    <EmojiWrapper fontSize="0.6em">❌</EmojiWrapper> void
+  </li>
+</AppearList>
+
+---
+
+
+
+<CodeSurfer>
+
+```ts file=./snippets/conditional-diff.ts
+```
+```ts 1 file=./snippets/conditional-diff.ts
+```
+
+```ts 3,4 file=./snippets/conditional-diff.ts
+```
+```ts 3:6 file=./snippets/conditional-diff.ts
+```
+```ts 3,4,7 file=./snippets/conditional-diff.ts
+```
+```ts file=./snippets/conditional-diff.ts
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/conditional-filter.ts
+```
+
+```ts 1 file=./snippets/conditional-filter.ts
+```
+```ts 3,4 file=./snippets/conditional-filter.ts
+```
+```ts 3:6 file=./snippets/conditional-filter.ts
+```
+```ts 3,4,7 file=./snippets/conditional-filter.ts
+```
+
+```ts file=./snippets/conditional-filter.ts
+```
+
+
+</CodeSurfer>
+
+
+
+<CodeSurfer>
+
+```ts file=./snippets/conditional-diff-filter.ts
+```
+
+</CodeSurfer>
+
+
+---
+
+# Mapped Conditionals
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/conditional-maps.ts
+```
+```ts 1:4 file=./snippets/conditional-maps.ts
+```
+```ts 6:8 file=./snippets/conditional-maps.ts
+```
+```ts 7[2:16] file=./snippets/conditional-maps.ts
+```
+```ts 7[19:38] file=./snippets/conditional-maps.ts
+```
+```ts 7[41:56] file=./snippets/conditional-maps.ts
+```
+```ts 7[60] file=./snippets/conditional-maps.ts
+```
+```ts 9:16 file=./snippets/conditional-maps.ts
+```
+```ts 18 file=./snippets/conditional-maps.ts
+```
+```ts 18:25 file=./snippets/conditional-maps.ts
+```
+```ts file=./snippets/conditional-maps.ts
+```
+
+</CodeSurfer>
+
+
+
+---
+
+<CodeSurfer>
+
+```ts file=./snippets/conditional-server.ts
+```
+
+```ts 1 file=./snippets/conditional-server.ts
+```
+
+```ts 2 file=./snippets/conditional-server.ts
+```
+
+```ts 4[25:41] file=./snippets/conditional-server.ts
+```
+
+```ts 4[44:48] file=./snippets/conditional-server.ts
+```
+
+```ts 4[52:56] file=./snippets/conditional-server.ts
+```
+
+```ts 6 file=./snippets/conditional-server.ts
+```
+
+```ts 7 file=./snippets/conditional-server.ts
+```
+
+```ts 8 file=./snippets/conditional-server.ts
+```
+
+```ts file=./snippets/conditional-server.ts
+```
+
+</CodeSurfer>

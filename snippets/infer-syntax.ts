@@ -1,4 +1,5 @@
-type WhatDidYouPromise<T> = T extends Promise<infer A> ? A : never;
+type WhatDidYouPromise<T> = T extends Promise<infer A>
+  ? A : never;
 
 type a = Promise<string>;
 type b = Promise<number>;

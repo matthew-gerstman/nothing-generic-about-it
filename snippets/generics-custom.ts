@@ -1,5 +1,5 @@
-type Person = {name: string; clothes: string[]};
-type Elf = {name: string; master: Person};
+type Person = {name: string; wand: string};
+type Elf = {name: string;};
 
 type SpellCaster<T> = T & {spells: string[]};
 
@@ -9,5 +9,5 @@ type HouseElf = SpellCaster<Elf>;
 type Wizard = {spells: string[]} & Person;
 type HouseElf = {spells: string[]} & Elf;
 
-type Wizard = {spells: string[]; name: string; clothes: string[]};
-type HouseElf = {spells: string[]; name: string; master: Person};
+type Wizard = {spells: string[]; name: string; wand: string};
+type HouseElf = {spells: string[]; name: string};

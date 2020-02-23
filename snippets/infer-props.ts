@@ -1,5 +1,7 @@
-type GetComponentProps<T> = T extends React.ComponentType<infer P> ? P : never;
+type GetComponentProps<T> = T extends React.ComponentType<infer P>
+  ? P : never;
 
-type WizardComponent = React.FC<{name: string}>;
+type TaylorComponent = React.FC<{albums: string[]}>;
 
-type WizardProps = GetComponentProps<WizardComponent>; // {name: string}
+type TaylorProps = GetComponentProps<TaylorComponent>;
+type TaylorProps = {albums: string[]}

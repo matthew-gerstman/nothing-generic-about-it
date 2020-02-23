@@ -1,14 +1,14 @@
-type WizardingWorld = {
+type ReduxState = {
   people: Person[];
   elves: Elf[];
 };
 
-type People = WizardingWorld['people'];
+type People = ReduxState['people'];
 type People = Person[];
 
-function getCitizen<T extends keyof WizardingWorld>(
-  world: WizardingWorld,
+function getKeyFromReduxStore<T extends keyof ReduxState>(
+  world: ReduxState,
   key: T,
-): WizardingWorld[T] {
+): ReduxState[T] {
   return world[key];
 }

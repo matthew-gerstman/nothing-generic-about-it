@@ -5,7 +5,7 @@ const EmojiImg = styled.img`
   display: inline-block;
 `;
 
-export const EmojiWrapper = styled.span`   
+export const EmojiWrapper = styled.span`
   font-size: ${({ fontSize }) => fontSize};
   text-align: left;
   margin-right: ${({ marginRight }) => marginRight || "10px"};
@@ -20,7 +20,6 @@ export default function Emoji({
   marginRight = "10px",
 }) {
   const src = require(`../assets/emoji/${name}`);
-  console.log({name, src})
   return (
     <EmojiWrapper size={size} fontSize={fontSize} marginRight={marginRight}>
       <EmojiImg

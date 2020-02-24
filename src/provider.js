@@ -8,7 +8,7 @@ console.log({SharpGrotesk})
 
 const footerHeight = '80px';
 
-const GlobalStyle = createGlobalStyle`  
+const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "AtlasGrotesk";
     src: url('${AtlasGrotesk}') format("truetype");
@@ -39,14 +39,14 @@ const GlobalStyle = createGlobalStyle`
 	}
 	h1 {
     font-family: SharpGrotesk!important;
-    text-transform: uppercase;		    
-    text-align: center; 
+    text-transform: uppercase;
+    text-align: center;
   }
-  
-  h2 {    
+
+  h2 {
     font-family: SharpGrotesk!important;
     text-transform: uppercase;
-    text-align: center;        
+    text-align: center;
   }
 `;
 
@@ -69,16 +69,16 @@ const Bar = styled.div`
 `;
 
 export default function MatthewProvider({children}) {
-  const {mode, length, index} = useDeck(); 
+  const {mode, length, index} = useDeck();
   if (mode.toLowerCase() !== 'normal') {
-    return children;
+    return <Fragment><GlobalStyle />{children}</Fragment>;
   }
 
   return (
     <Fragment>
       <GlobalStyle />
       <Wrapper>{children}</Wrapper>
-      {/* <Bar size={(index + 1) / length} /> */}
+      <Bar size={(index + 1) / length} />
       <Footer height={footerHeight} />
     </Fragment>
   );

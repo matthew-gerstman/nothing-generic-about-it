@@ -32,6 +32,8 @@ import doctorTransformation from './assets/images/doctor-transformation.gif'
 import deepBreath from './assets/images/deep-breath.gif';
 import stretch from './assets/images/stretch.gif'
 import wat from './assets/images/wat.gif'
+import questions from './assets/images/questions.gif'
+import sevenPotters from './assets/images/seven-potters.gif'
 
 import Emoji, {EmojiWrapper} from './src/emoji';
 
@@ -382,7 +384,7 @@ Honest any
 
 ---
 
-Gif about any clobbering/bulldozing types
+<img src={sevenPotters} style={{height: '90%'}} />
 
 ---
 
@@ -713,7 +715,7 @@ Gif about any clobbering/bulldozing types
 ```ts 3 file=./snippets/conditional-syntax.ts
 ```
 
-```ts 4 file=./snippets/conditional-syntax.ts
+```ts 4:6 file=./snippets/conditional-syntax.ts
 ```
 
 ```ts file=./snippets/conditional-syntax.ts
@@ -941,6 +943,10 @@ function identity<T>(foo: T): T {
 
 ---
 
+# Type Indexing
+
+---
+
 <CodeSurfer>
 
 ```ts
@@ -1005,11 +1011,11 @@ type WhatDidYouPromise<T> = T extends Promise<infer A>
 
 ---
 
-<CoveredTopics />
+<img src={deepBreath} style={{height: "90%"}} />
 
 ---
 
-<img src={deepBreath} style={{height: "90%"}} />
+<CoveredTopics />
 
 ---
 
@@ -1030,6 +1036,10 @@ type WhatDidYouPromise<T> = T extends Promise<infer A>
 ---
 
 <AboutMe />
+
+---
+
+<img src={questions} style={{height: '90%'}} />
 
 ---
 

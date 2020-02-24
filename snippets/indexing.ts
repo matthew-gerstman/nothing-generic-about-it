@@ -10,5 +10,5 @@ function getKeyFromReduxStore<T extends keyof ReduxState>(
   state: ReduxState,
   key: T,
 ): ReduxState[T] {
-  return world[key];
+  return state[key];
 }

@@ -31,6 +31,11 @@ const SlideEmojiWrapper = styled.div`
 export default ({children, height}) => (
   <Footer height={height}>
     <AlignedDiv>
+      <Emoji name="dropbox.svg" size="30px" marginRight="10px" />
+      @mgerstman
+    </AlignedDiv>
+
+    <AlignedDiv>
       <SlideEmojiWrapper>
         📒
       </SlideEmojiWrapper>

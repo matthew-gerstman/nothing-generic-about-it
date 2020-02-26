@@ -3,7 +3,7 @@ type Muggle = {name: string};
 type Person = Wizard | Muggle;
 
 function sayMyName(person: Person) {
-  // Shared property makes this a "discriminated union"
+  // Shared property typechecks
   return person.name;
 }
 

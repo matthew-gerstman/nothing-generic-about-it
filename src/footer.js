@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Emoji, {EmojiWrapper} from './emoji';
-import {darkGreen} from './colors';
+import React from "react";
+import styled from "styled-components";
+import Emoji, { EmojiWrapper } from "./emoji";
+import { darkGreen } from "./colors";
 
 const Footer = styled.footer`
   text-transform: Uppercase;
@@ -10,7 +10,7 @@ const Footer = styled.footer`
   padding: 30px 100px;
   text-align: right;
   width: 100%;
-  height: ${({height}) => height};
+  height: ${({ height }) => height};
   background: ${darkGreen};
   display: flex;
   justify-content: space-between;
@@ -26,20 +26,15 @@ const AlignedDiv = styled.div`
 
 const SlideEmojiWrapper = styled.div`
   margin-right: 10px;
-`
+`;
 
-export default ({children, height}) => (
+export default ({ children, height }) => (
   <Footer height={height}>
     <AlignedDiv>
-      <Emoji name="dropbox.svg" size="30px" marginRight="10px" />
-      @mgerstman
-    </AlignedDiv>
-
-    <AlignedDiv>
-      <SlideEmojiWrapper>
-        📒
-      </SlideEmojiWrapper>
-      <a href="https://generics.matthewgerstman.com">generics.matthewgerstman.com</a>
+      <SlideEmojiWrapper>📒</SlideEmojiWrapper>
+      <a href="https://generics.matthewgerstman.com">
+        generics.matthewgerstman.com
+      </a>
     </AlignedDiv>
 
     <AlignedDiv>

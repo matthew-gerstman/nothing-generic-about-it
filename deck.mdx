@@ -64,7 +64,7 @@ export const theme = customTheme;
 ---
 # How do I tell TypeScript I know something's wrong?
 ---
-# How do I type the shiny new React pattern?
+# How do I type the shiny new JavaScript pattern?
 
 <AppearList marginTop="-40px">
   <li><Emoji name="typescript.jpg" size="40px" /> HOCs</li>
@@ -290,6 +290,10 @@ Honest any
 
 ---
 
+# // This should never happen
+
+---
+
 <CodeSurfer>
 
 ```ts file=./snippets/never.ts
@@ -403,10 +407,14 @@ Honest any
 
 # Generics
 
+
 ---
 
 <img src={taylorExcited} style={{height: "90%"}} />
 
+---
+
+# Generics are like passing a type as an argument
 ---
 
 <CodeSurfer>
@@ -482,6 +490,9 @@ Honest any
 
 # Constraints
 
+---
+
+# We can only pass one of these types
 
 ---
 
@@ -560,10 +571,6 @@ Honest any
 ---
 
 # I want the compiler to figure out what type we have
-
----
-
-# Type Generation
 
 ---
 
@@ -863,10 +870,6 @@ type EventualType<T> = T extends Promise<unknown> ?
 
 
 </CodeSurfer>
-
----
-
-# Type Narrowing
 
 ---
 

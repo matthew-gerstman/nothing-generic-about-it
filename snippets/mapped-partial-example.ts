@@ -4,7 +4,7 @@ type File = {
   permissions: string[];
 };
 
-type PartialFile = Partial<PartialFile>;
+type PartialFile = Partial<File>;
 type PartialFile = {
   name?: string;
   size?: number;
